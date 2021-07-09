@@ -72,7 +72,7 @@ tot_events = 30000
 gridpacks_dict = {}
 dataset_names = {}
 version="2.6.5"
-t_datasetname = "HToZATo2L2B_<RANGE>_ggH_TuneCP5_13TeV_pythia8"
+t_datasetname = "GluGluToHToZATo2L2B_<RANGE>_TuneCP5_13TeV-madgraph-pythia8"
 t_gp = "/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_<RANGE>_ggH_TuneCP5_13TeV_pythia8/v1/HToZATo2L2B_<RANGE>_ggH_TuneCP5_13TeV_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz"
 
 for i, year in enumerate(years):
@@ -94,7 +94,11 @@ for i, year in enumerate(years):
             gridpacks = copy.deepcopy(t_gp)
             gridpacks = gridpacks.replace("<RANGE>",r)
             dataset_name = copy.deepcopy(t_datasetname)
-            dataset_name = dataset_name.replace("<RANGE>",r)
+            rangeList = r.split("_")
+            # GluGluToHToZATo2L2B_MH-1000p00_MA-200p00_tb-1p50_TuneCP5_13TeV-madgraph-pythia8
+            rangeType = "MH-%s_MA-%s_tb-%s" % (rangeList[0], rangeList[1], rangeList[2])
+            dataset_name = dataset_name.replace("<RANGE>",rangeType)
+            print("datasetName = ", dataset_name)
             tmp_fragment = copy.deepcopy(LHEproducer)
             tmp_fragment = tmp_fragment.replace("__GRIDPACK__",gridpacks)
             note = dataset_name.replace('_',' ')
