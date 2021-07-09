@@ -4,6 +4,7 @@ import requests
 import re
 import csv
 import copy
+from os import path
 
 # HToZATo2L2B_bbH4F fragments
 pythia_fragment_CP5 = """
@@ -100,12 +101,26 @@ for i, year in enumerate(years):
         for r in ranges:
             gridpacks = copy.deepcopy(t_gp)
             gridpacks = gridpacks.replace("<RANGE>",r)
+            ### Check if gridpacks exist            
+            gr_exists = path.exists(gridpacks)
+            if (not gr_exists):
+                print("Path %s does not exist!" % gr_exists)
+
             dataset_name = copy.deepcopy(t_datasetname)
             rangeList = r.split("_") 
             # HToZATo2L2B_MH-1000p00_MA-200p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8
             rangeType = "MH-%s_MA-%s_tb-%s" % (rangeList[0], rangeList[1], rangeList[2])
             dataset_name = dataset_name.replace("<RANGE>",rangeType)
-            print("datasetName = ", dataset_name)
+
+            ### Check if filename exist
+            dataset_names_txt = open("dataset_names_priority_samples.txt", "r")
+            dNameExists = False
+            for line in dataset_names_txt:
+                if re. search(dataset_name, line):
+                    dNameExists = True
+            if (dNameExists == False):
+                print("Dataset name %s does not exist!" % dataset_name)
+
             tmp_fragment = copy.deepcopy(LHEproducer)
             tmp_fragment = tmp_fragment.replace("__GRIDPACK__",gridpacks)
             note = dataset_name.replace('_',' ')
