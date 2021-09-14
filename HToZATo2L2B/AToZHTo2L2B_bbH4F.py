@@ -103,9 +103,9 @@ for i, year in enumerate(years):
             tmp_fragment = tmp_fragment.replace("__GRIDPACK__",gridpacks)
             note = dataset_name.replace('_',' ')
             generators="Madgraph_" + version + "  Pythia8"
-            mcdb_id = '0' # what is this?
-            time = '0.3' # fixme
-            size = '120' #fixme
+            mcdb_id = '0' 
+            time = '2.6' 
+            size = '128' 
             t_LHEproducer = copy.deepcopy(LHEproducer)
             final_fragment = t_LHEproducer.replace('__GRIDPACK__',gridpacks) + '\n' + pythia_fragment_CP5
             csvwriter.writerow([dataset_name, events, final_fragment, note, generators, mcdb_id, time, size])

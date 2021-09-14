@@ -1,0 +1,921 @@
+Dataset name,Events,fragment,notes,Generator,mcdbid,time,size
+HToZATo2L2B_MH-200p00_MA-100p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_200p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_200p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-200p00 MA-100p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-250p00_MA-50p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_250p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_250p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-250p00 MA-50p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-250p00_MA-100p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_250p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_250p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-250p00 MA-100p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-300p00_MA-50p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_300p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_300p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-300p00 MA-50p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-300p00_MA-100p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_300p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_300p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-300p00 MA-100p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-300p00_MA-200p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_300p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_300p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-300p00 MA-200p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-500p00_MA-50p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_500p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_500p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-500p00 MA-50p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-500p00_MA-100p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_500p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_500p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-500p00 MA-100p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-500p00_MA-200p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_500p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_500p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-500p00 MA-200p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-500p00_MA-300p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_500p00_300p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_500p00_300p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-500p00 MA-300p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-500p00_MA-400p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_500p00_400p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_500p00_400p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-500p00 MA-400p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-650p00_MA-50p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_650p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_650p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-650p00 MA-50p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-800p00_MA-50p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_800p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_800p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-800p00 MA-50p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-800p00_MA-100p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_800p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_800p00_100p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-800p00 MA-100p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-800p00_MA-200p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_800p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_800p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-800p00 MA-200p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-800p00_MA-400p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_800p00_400p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_800p00_400p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-800p00 MA-400p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-800p00_MA-700p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_800p00_700p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_800p00_700p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-800p00 MA-700p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-1000p00_MA-50p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_1000p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_1000p00_50p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-1000p00 MA-50p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-1000p00_MA-200p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_1000p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_1000p00_200p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-1000p00 MA-200p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-1000p00_MA-500p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_1000p00_500p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_1000p00_500p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-1000p00 MA-500p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-200p00_MA-125p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_200p00_125p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_200p00_125p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-200p00 MA-125p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-510p00_MA-130p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_510p00_130p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_510p00_130p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-510p00 MA-130p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
+HToZATo2L2B_MH-750p00_MA-610p00_tb-20p00_TuneCP5_bbH4F_13TeV-mcatnlo-pythia8,30000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/HToZATo2L2B_750p00_610p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8/v1/HToZATo2L2B_750p00_610p00_20p00_bbH4F_TuneCP5_13TeV-amcatnlo_pythia8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(1000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'pythia8PSweightsSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+ProductionFilterSequence = cms.Sequence(generator)
+",HToZATo2L2B MH-750p00 MA-610p00 tb-20p00 TuneCP5 bbH4F 13TeV-mcatnlo-pythia8,Madgraph_2.6.5  Pythia8,0,2.7,125
