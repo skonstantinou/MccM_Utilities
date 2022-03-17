@@ -1,0 +1,743 @@
+Dataset name,Total events,Fragment,Time per event,Size per event,mcdbid,Generator
+TTToHcToWAToMuMu_MHc-70_MA-15_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc70_MA15/v1/TTToHcToWA_AToMuMu_MHc70_MA15_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-70_MA-40_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc70_MA40/v1/TTToHcToWA_AToMuMu_MHc70_MA40_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-70_MA-65_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc70_MA65/v1/TTToHcToWA_AToMuMu_MHc70_MA65_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-100_MA-15_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc100_MA15/v1/TTToHcToWA_AToMuMu_MHc100_MA15_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-100_MA-60_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc100_MA60/v1/TTToHcToWA_AToMuMu_MHc100_MA60_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-100_MA-95_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc100_MA95/v1/TTToHcToWA_AToMuMu_MHc100_MA95_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-130_MA-15_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc130_MA15/v1/TTToHcToWA_AToMuMu_MHc130_MA15_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-130_MA-55_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc130_MA55/v1/TTToHcToWA_AToMuMu_MHc130_MA55_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-130_MA-90_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc130_MA90/v1/TTToHcToWA_AToMuMu_MHc130_MA90_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-130_MA-125_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc130_MA125/v1/TTToHcToWA_AToMuMu_MHc130_MA125_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-160_MA-15_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc160_MA15/v1/TTToHcToWA_AToMuMu_MHc160_MA15_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-160_MA-85_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc160_MA85/v1/TTToHcToWA_AToMuMu_MHc160_MA85_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-160_MA-120_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc160_MA120/v1/TTToHcToWA_AToMuMu_MHc160_MA120_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
+TTToHcToWAToMuMu_MHc-160_MA-155_MultiLepFilter_TuneCP5_13TeV-madgraph-pythia8,276000,"import FWCore.ParameterSet.Config as cms
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+        args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/TTToHcToWA_AToMuMu_MHc160_MA155/v1/TTToHcToWA_AToMuMu_MHc160_MA155_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+        nEvents = cms.untracked.uint32(5000),
+        numberOfParameters = cms.uint32(1),
+        outputFile = cms.string('cmsgrid_final.lhe'),
+        scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8PSweightsSettings'
+                                    )
+    )
+)
+
+LeptonFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32            (13 , -13, -13, -11,  13,  11, -13, -11, 13 , 11 , 13,  11, -13, -11),
+    MotherID    = cms.untracked.vint32  (36 , 36 , 24 , 24 , -24, -24, 37 , 37 , -37, -37, 15 , 15 , -15, -15),
+    PtMin       = cms.vdouble           (-1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1., -1.),
+    EtaMax      = cms.vdouble           (1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6, 1E6),
+    Status      = cms.vint32            (0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0  , 0)
+)
+
+
+LepKinFilter = cms.EDFilter(""MCMultiParticleFilter"",
+    AcceptMore  = cms.bool(True),
+    NumRequired = cms.int32(3),
+    ParticleID  = cms.vint32(13, -13, 11, -11),
+    MotherID    = cms.untracked.vint32(0, 0, 0, 0),
+    PtMin       = cms.vdouble(5., 5., 5., 5.),
+    EtaMax      = cms.vdouble(2.6, 2.6, 2.6, 2.6),
+    Status      = cms.vint32(1, 1, 1, 1)
+)
+
+ProductionFilterSequence = cms.Sequence(generator*LeptonFilter*LepKinFilter)",2.6,140,0,Madgraph_2.6.5 Pythia8
