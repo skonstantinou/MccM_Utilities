@@ -1,0 +1,851 @@
+Dataset name,Events,fragment,notes,Generator,time,size
+ChargedHiggs_HplusTB_HplusToTB_M-800_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M800/v1/ChargedHiggs_TB_NLO_M800_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-800', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-2000_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M2000/v1/ChargedHiggs_TB_NLO_M2000_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-2000', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-1250_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M1250/v1/ChargedHiggs_TB_NLO_M1250_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-1250', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-2500_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M2500/v1/ChargedHiggs_TB_NLO_M2500_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-2500', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-200_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M200/v1/ChargedHiggs_TB_NLO_M200_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-200', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-700_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M700/v1/ChargedHiggs_TB_NLO_M700_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-700', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-300_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M300/v1/ChargedHiggs_TB_NLO_M300_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-300', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-1500_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M1500/v1/ChargedHiggs_TB_NLO_M1500_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-1500', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-400_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M400/v1/ChargedHiggs_TB_NLO_M400_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-400', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-1000_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M1000/v1/ChargedHiggs_TB_NLO_M1000_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-1000', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-3000_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M3000/v1/ChargedHiggs_TB_NLO_M3000_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-3000', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-500_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M500/v1/ChargedHiggs_TB_NLO_M500_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-500', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-1750_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M1750/v1/ChargedHiggs_TB_NLO_M1750_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-1750', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-600_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M600/v1/ChargedHiggs_TB_NLO_M600_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-600', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-250_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M250/v1/ChargedHiggs_TB_NLO_M250_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-250', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-220_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M220/v1/ChargedHiggs_TB_NLO_M220_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-220', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150
+ChargedHiggs_HplusTB_HplusToTB_M-350_TuneCP5_13TeV_amcatnlo_pythia8,10000000,"import FWCore.ParameterSet.Config as cms
+
+# link to card:
+# https://github.com/cms-sw/genproductions/tree/705976d5de7ee8230d5a1a0b1d62890860b93103/bin/MadGraph5_aMCatNLO/cards/production/2017/13TeV/ChargedHiggs_TB/ChargedHiggs_TB_NLO/ChargedHiggs_TB_NLO_proc_card.dat
+
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/ChargedHiggs_TB_NLO_M350/v1/ChargedHiggs_TB_NLO_M350_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+from Configuration.Generator.Pythia8aMCatNLOSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+
+generator = cms.EDFilter(""Pythia8HadronizerFilter"",
+    maxEventsToPrint = cms.untracked.int32(1),
+    pythiaPylistVerbosity = cms.untracked.int32(1),
+    filterEfficiency = cms.untracked.double(1.0),
+    pythiaHepMCVerbosity = cms.untracked.bool(False),
+    comEnergy = cms.double(13000.),
+    PythiaParameters = cms.PSet(
+        pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
+        pythia8CP5SettingsBlock,
+        pythia8aMCatNLOSettingsBlock,
+        processParameters = cms.vstring(
+            'TimeShower:nPartonsInBorn = 2', #number of coloured particles (before resonance decays) in born matrix element
+            'Higgs:useBSM = on', ## enable handling of bsm particles
+            'SLHA:keepSM = on', # read properties from lhe
+            'SLHA:minMassSM = 100.', # as above
+            '37:mayDecay = on', ## decay of the ch higgs
+            '37:onMode = off',
+            '37:onIfAny = 6',
+            '37:doForceWidth = on' ## make it with a width
+        ),
+        parameterSets = cms.vstring('pythia8CommonSettings',
+                                    'pythia8PSweightsSettings',
+                                    'pythia8CP5Settings',
+                                    'pythia8aMCatNLOSettings',
+                                    'processParameters',
+                                    )
+    )
+)
+
+","['ChargedHiggs', 'HplusTB', 'HplusToTB', 'M-350', 'TuneCP5', '13TeV', 'amcatnlo', 'pythia8']",Madgraph+Pythia8,4.5,150

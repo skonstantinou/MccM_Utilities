@@ -1,0 +1,1370 @@
+1,2c1,2
+< prepid,Dataset name,Events,fragment,notes,Generator,mcdbid
+< HIG-RunIISummer20UL16wmLHEGENAPV-04532,NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> Dataset name,Events,fragment,notes,Generator,mcdbid,time,size
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+54c54
+< HIG-RunIISummer20UL16wmLHEGENAPV-04533,NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+106c106
+< HIG-RunIISummer20UL16wmLHEGENAPV-04534,NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+158c158
+< HIG-RunIISummer20UL16wmLHEGENAPV-04535,NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+210c210
+< HIG-RunIISummer20UL16wmLHEGENAPV-04536,NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-240_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+262c262
+< HIG-RunIISummer20UL16wmLHEGENAPV-04537,NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+314c314
+< HIG-RunIISummer20UL16wmLHEGENAPV-04538,NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+366c366
+< HIG-RunIISummer20UL16wmLHEGENAPV-04539,NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+418c418
+< HIG-RunIISummer20UL16wmLHEGENAPV-04540,NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+470c470
+< HIG-RunIISummer20UL16wmLHEGENAPV-04541,NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+522c522
+< HIG-RunIISummer20UL16wmLHEGENAPV-04542,NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+574c574
+< HIG-RunIISummer20UL16wmLHEGENAPV-04543,NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-280_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+626c626
+< HIG-RunIISummer20UL16wmLHEGENAPV-04544,NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+678c678
+< HIG-RunIISummer20UL16wmLHEGENAPV-04545,NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+730c730
+< HIG-RunIISummer20UL16wmLHEGENAPV-04546,NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+782c782
+< HIG-RunIISummer20UL16wmLHEGENAPV-04547,NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+834c834
+< HIG-RunIISummer20UL16wmLHEGENAPV-04548,NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+886c886
+< HIG-RunIISummer20UL16wmLHEGENAPV-04549,NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+938c938
+< HIG-RunIISummer20UL16wmLHEGENAPV-04550,NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-300_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+990c990
+< HIG-RunIISummer20UL16wmLHEGENAPV-04551,NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1042c1042
+< HIG-RunIISummer20UL16wmLHEGENAPV-04552,NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1094c1094
+< HIG-RunIISummer20UL16wmLHEGENAPV-04553,NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1146c1146
+< HIG-RunIISummer20UL16wmLHEGENAPV-04554,NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1198c1198
+< HIG-RunIISummer20UL16wmLHEGENAPV-04555,NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1250c1250
+< HIG-RunIISummer20UL16wmLHEGENAPV-04556,NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1302c1302
+< HIG-RunIISummer20UL16wmLHEGENAPV-04557,NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-320_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1354c1354
+< HIG-RunIISummer20UL16wmLHEGENAPV-04558,NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1406c1406
+< HIG-RunIISummer20UL16wmLHEGENAPV-04559,NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1458c1458
+< HIG-RunIISummer20UL16wmLHEGENAPV-04560,NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1510c1510
+< HIG-RunIISummer20UL16wmLHEGENAPV-04561,NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1562c1562
+< HIG-RunIISummer20UL16wmLHEGENAPV-04562,NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1614c1614
+< HIG-RunIISummer20UL16wmLHEGENAPV-04563,NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1666c1666
+< HIG-RunIISummer20UL16wmLHEGENAPV-04564,NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-360_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1718c1718
+< HIG-RunIISummer20UL16wmLHEGENAPV-04565,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1770c1770
+< HIG-RunIISummer20UL16wmLHEGENAPV-04566,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1822c1822
+< HIG-RunIISummer20UL16wmLHEGENAPV-04567,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1874c1874
+< HIG-RunIISummer20UL16wmLHEGENAPV-04568,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1926c1926
+< HIG-RunIISummer20UL16wmLHEGENAPV-04569,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+1978c1978
+< HIG-RunIISummer20UL16wmLHEGENAPV-04570,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2030c2030
+< HIG-RunIISummer20UL16wmLHEGENAPV-04571,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2082c2082
+< HIG-RunIISummer20UL16wmLHEGENAPV-04572,NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-400_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2134c2134
+< HIG-RunIISummer20UL16wmLHEGENAPV-04573,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2186c2186
+< HIG-RunIISummer20UL16wmLHEGENAPV-04574,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2238c2238
+< HIG-RunIISummer20UL16wmLHEGENAPV-04575,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2290c2290
+< HIG-RunIISummer20UL16wmLHEGENAPV-04576,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2342c2342
+< HIG-RunIISummer20UL16wmLHEGENAPV-04577,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2394c2394
+< HIG-RunIISummer20UL16wmLHEGENAPV-04578,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2446c2446
+< HIG-RunIISummer20UL16wmLHEGENAPV-04579,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2498c2498
+< HIG-RunIISummer20UL16wmLHEGENAPV-04580,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2550c2550
+< HIG-RunIISummer20UL16wmLHEGENAPV-04581,NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-500_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2602c2602
+< HIG-RunIISummer20UL16wmLHEGENAPV-04582,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2654c2654
+< HIG-RunIISummer20UL16wmLHEGENAPV-04583,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2706c2706
+< HIG-RunIISummer20UL16wmLHEGENAPV-04584,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2758c2758
+< HIG-RunIISummer20UL16wmLHEGENAPV-04585,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2810c2810
+< HIG-RunIISummer20UL16wmLHEGENAPV-04586,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2862c2862
+< HIG-RunIISummer20UL16wmLHEGENAPV-04587,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2914c2914
+< HIG-RunIISummer20UL16wmLHEGENAPV-04588,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+2966c2966
+< HIG-RunIISummer20UL16wmLHEGENAPV-04589,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3018c3018
+< HIG-RunIISummer20UL16wmLHEGENAPV-04590,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3070c3070
+< HIG-RunIISummer20UL16wmLHEGENAPV-04591,NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-600_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3122c3122
+< HIG-RunIISummer20UL16wmLHEGENAPV-04592,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3174c3174
+< HIG-RunIISummer20UL16wmLHEGENAPV-04593,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3226c3226
+< HIG-RunIISummer20UL16wmLHEGENAPV-04594,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3278c3278
+< HIG-RunIISummer20UL16wmLHEGENAPV-04595,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3330c3330
+< HIG-RunIISummer20UL16wmLHEGENAPV-04596,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3382c3382
+< HIG-RunIISummer20UL16wmLHEGENAPV-04597,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3434c3434
+< HIG-RunIISummer20UL16wmLHEGENAPV-04598,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3486c3486
+< HIG-RunIISummer20UL16wmLHEGENAPV-04599,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3538c3538
+< HIG-RunIISummer20UL16wmLHEGENAPV-04600,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3590c3590
+< HIG-RunIISummer20UL16wmLHEGENAPV-04601,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3642c3642
+< HIG-RunIISummer20UL16wmLHEGENAPV-04602,NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-700_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3694c3694
+< HIG-RunIISummer20UL16wmLHEGENAPV-04603,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3746c3746
+< HIG-RunIISummer20UL16wmLHEGENAPV-04604,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3798c3798
+< HIG-RunIISummer20UL16wmLHEGENAPV-04605,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3850c3850
+< HIG-RunIISummer20UL16wmLHEGENAPV-04606,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3902c3902
+< HIG-RunIISummer20UL16wmLHEGENAPV-04607,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+3954c3954
+< HIG-RunIISummer20UL16wmLHEGENAPV-04608,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4006c4006
+< HIG-RunIISummer20UL16wmLHEGENAPV-04609,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4058c4058
+< HIG-RunIISummer20UL16wmLHEGENAPV-04610,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4110c4110
+< HIG-RunIISummer20UL16wmLHEGENAPV-04611,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4162c4162
+< HIG-RunIISummer20UL16wmLHEGENAPV-04612,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4214c4214
+< HIG-RunIISummer20UL16wmLHEGENAPV-04613,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4266c4266
+< HIG-RunIISummer20UL16wmLHEGENAPV-04614,NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-800_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4318c4318
+< HIG-RunIISummer20UL16wmLHEGENAPV-04615,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4370c4370
+< HIG-RunIISummer20UL16wmLHEGENAPV-04616,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4422c4422
+< HIG-RunIISummer20UL16wmLHEGENAPV-04617,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4474c4474
+< HIG-RunIISummer20UL16wmLHEGENAPV-04618,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4526c4526
+< HIG-RunIISummer20UL16wmLHEGENAPV-04619,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4578c4578
+< HIG-RunIISummer20UL16wmLHEGENAPV-04620,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4630c4630
+< HIG-RunIISummer20UL16wmLHEGENAPV-04621,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4682c4682
+< HIG-RunIISummer20UL16wmLHEGENAPV-04622,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4734c4734
+< HIG-RunIISummer20UL16wmLHEGENAPV-04623,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4786c4786
+< HIG-RunIISummer20UL16wmLHEGENAPV-04624,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4838c4838
+< HIG-RunIISummer20UL16wmLHEGENAPV-04625,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4890c4890
+< HIG-RunIISummer20UL16wmLHEGENAPV-04626,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4942c4942
+< HIG-RunIISummer20UL16wmLHEGENAPV-04627,NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-900_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+4994c4994
+< HIG-RunIISummer20UL16wmLHEGENAPV-04628,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5046c5046
+< HIG-RunIISummer20UL16wmLHEGENAPV-04629,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5098c5098
+< HIG-RunIISummer20UL16wmLHEGENAPV-04630,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5150c5150
+< HIG-RunIISummer20UL16wmLHEGENAPV-04631,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5202c5202
+< HIG-RunIISummer20UL16wmLHEGENAPV-04632,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5254c5254
+< HIG-RunIISummer20UL16wmLHEGENAPV-04633,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5306c5306
+< HIG-RunIISummer20UL16wmLHEGENAPV-04634,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5358c5358
+< HIG-RunIISummer20UL16wmLHEGENAPV-04635,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5410c5410
+< HIG-RunIISummer20UL16wmLHEGENAPV-04636,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5462c5462
+< HIG-RunIISummer20UL16wmLHEGENAPV-04637,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5514c5514
+< HIG-RunIISummer20UL16wmLHEGENAPV-04638,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5566c5566
+< HIG-RunIISummer20UL16wmLHEGENAPV-04639,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5618c5618
+< HIG-RunIISummer20UL16wmLHEGENAPV-04640,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5670c5670
+< HIG-RunIISummer20UL16wmLHEGENAPV-04641,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5722c5722
+< HIG-RunIISummer20UL16wmLHEGENAPV-04642,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5774c5774
+< HIG-RunIISummer20UL16wmLHEGENAPV-04643,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5826c5826
+< HIG-RunIISummer20UL16wmLHEGENAPV-04644,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5878c5878
+< HIG-RunIISummer20UL16wmLHEGENAPV-04645,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5930c5930
+< HIG-RunIISummer20UL16wmLHEGENAPV-04646,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+5982c5982
+< HIG-RunIISummer20UL16wmLHEGENAPV-04647,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6034c6034
+< HIG-RunIISummer20UL16wmLHEGENAPV-04648,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6086c6086
+< HIG-RunIISummer20UL16wmLHEGENAPV-04649,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6138c6138
+< HIG-RunIISummer20UL16wmLHEGENAPV-04650,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6190c6190
+< HIG-RunIISummer20UL16wmLHEGENAPV-04651,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6242c6242
+< HIG-RunIISummer20UL16wmLHEGENAPV-04652,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6294c6294
+< HIG-RunIISummer20UL16wmLHEGENAPV-04653,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6346c6346
+< HIG-RunIISummer20UL16wmLHEGENAPV-04654,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6398c6398
+< HIG-RunIISummer20UL16wmLHEGENAPV-04655,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6450c6450
+< HIG-RunIISummer20UL16wmLHEGENAPV-04656,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6502c6502
+< HIG-RunIISummer20UL16wmLHEGENAPV-04657,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1200_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6554c6554
+< HIG-RunIISummer20UL16wmLHEGENAPV-04658,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6606c6606
+< HIG-RunIISummer20UL16wmLHEGENAPV-04659,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6658c6658
+< HIG-RunIISummer20UL16wmLHEGENAPV-04660,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6710c6710
+< HIG-RunIISummer20UL16wmLHEGENAPV-04661,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6762c6762
+< HIG-RunIISummer20UL16wmLHEGENAPV-04662,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6814c6814
+< HIG-RunIISummer20UL16wmLHEGENAPV-04663,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6866c6866
+< HIG-RunIISummer20UL16wmLHEGENAPV-04664,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6918c6918
+< HIG-RunIISummer20UL16wmLHEGENAPV-04665,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+6970c6970
+< HIG-RunIISummer20UL16wmLHEGENAPV-04666,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7022c7022
+< HIG-RunIISummer20UL16wmLHEGENAPV-04667,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7074c7074
+< HIG-RunIISummer20UL16wmLHEGENAPV-04668,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7126c7126
+< HIG-RunIISummer20UL16wmLHEGENAPV-04669,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7178c7178
+< HIG-RunIISummer20UL16wmLHEGENAPV-04670,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7230c7230
+< HIG-RunIISummer20UL16wmLHEGENAPV-04671,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7282c7282
+< HIG-RunIISummer20UL16wmLHEGENAPV-04672,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7334c7334
+< HIG-RunIISummer20UL16wmLHEGENAPV-04673,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7386c7386
+< HIG-RunIISummer20UL16wmLHEGENAPV-04674,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7438c7438
+< HIG-RunIISummer20UL16wmLHEGENAPV-04675,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1400_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7490c7490
+< HIG-RunIISummer20UL16wmLHEGENAPV-04676,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7542c7542
+< HIG-RunIISummer20UL16wmLHEGENAPV-04677,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7594c7594
+< HIG-RunIISummer20UL16wmLHEGENAPV-04678,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7646c7646
+< HIG-RunIISummer20UL16wmLHEGENAPV-04679,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7698c7698
+< HIG-RunIISummer20UL16wmLHEGENAPV-04680,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7750c7750
+< HIG-RunIISummer20UL16wmLHEGENAPV-04681,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7802c7802
+< HIG-RunIISummer20UL16wmLHEGENAPV-04682,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7854c7854
+< HIG-RunIISummer20UL16wmLHEGENAPV-04683,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7906c7906
+< HIG-RunIISummer20UL16wmLHEGENAPV-04684,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+7958c7958
+< HIG-RunIISummer20UL16wmLHEGENAPV-04685,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8010c8010
+< HIG-RunIISummer20UL16wmLHEGENAPV-04686,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8062c8062
+< HIG-RunIISummer20UL16wmLHEGENAPV-04687,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8114c8114
+< HIG-RunIISummer20UL16wmLHEGENAPV-04688,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8166c8166
+< HIG-RunIISummer20UL16wmLHEGENAPV-04689,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8218c8218
+< HIG-RunIISummer20UL16wmLHEGENAPV-04690,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8270c8270
+< HIG-RunIISummer20UL16wmLHEGENAPV-04691,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8322c8322
+< HIG-RunIISummer20UL16wmLHEGENAPV-04692,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8374c8374
+< HIG-RunIISummer20UL16wmLHEGENAPV-04693,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8426c8426
+< HIG-RunIISummer20UL16wmLHEGENAPV-04694,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8478c8478
+< HIG-RunIISummer20UL16wmLHEGENAPV-04695,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1600_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8530c8530
+< HIG-RunIISummer20UL16wmLHEGENAPV-04696,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8582c8582
+< HIG-RunIISummer20UL16wmLHEGENAPV-04697,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8634c8634
+< HIG-RunIISummer20UL16wmLHEGENAPV-04698,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8686c8686
+< HIG-RunIISummer20UL16wmLHEGENAPV-04699,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8738c8738
+< HIG-RunIISummer20UL16wmLHEGENAPV-04700,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8790c8790
+< HIG-RunIISummer20UL16wmLHEGENAPV-04701,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8842c8842
+< HIG-RunIISummer20UL16wmLHEGENAPV-04702,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8894c8894
+< HIG-RunIISummer20UL16wmLHEGENAPV-04703,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8946c8946
+< HIG-RunIISummer20UL16wmLHEGENAPV-04704,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+8998c8998
+< HIG-RunIISummer20UL16wmLHEGENAPV-04705,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9050c9050
+< HIG-RunIISummer20UL16wmLHEGENAPV-04706,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9102c9102
+< HIG-RunIISummer20UL16wmLHEGENAPV-04707,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9154c9154
+< HIG-RunIISummer20UL16wmLHEGENAPV-04708,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9206c9206
+< HIG-RunIISummer20UL16wmLHEGENAPV-04709,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9258c9258
+< HIG-RunIISummer20UL16wmLHEGENAPV-04710,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9310c9310
+< HIG-RunIISummer20UL16wmLHEGENAPV-04711,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9362c9362
+< HIG-RunIISummer20UL16wmLHEGENAPV-04712,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9414c9414
+< HIG-RunIISummer20UL16wmLHEGENAPV-04713,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9466c9466
+< HIG-RunIISummer20UL16wmLHEGENAPV-04714,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9518c9518
+< HIG-RunIISummer20UL16wmLHEGENAPV-04715,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9570c9570
+< HIG-RunIISummer20UL16wmLHEGENAPV-04716,NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-1800_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9622c9622
+< HIG-RunIISummer20UL16wmLHEGENAPV-04717,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9674c9674
+< HIG-RunIISummer20UL16wmLHEGENAPV-04718,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9726c9726
+< HIG-RunIISummer20UL16wmLHEGENAPV-04719,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9778c9778
+< HIG-RunIISummer20UL16wmLHEGENAPV-04720,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9830c9830
+< HIG-RunIISummer20UL16wmLHEGENAPV-04721,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9882c9882
+< HIG-RunIISummer20UL16wmLHEGENAPV-04722,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9934c9934
+< HIG-RunIISummer20UL16wmLHEGENAPV-04723,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+9986c9986
+< HIG-RunIISummer20UL16wmLHEGENAPV-04724,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10038c10038
+< HIG-RunIISummer20UL16wmLHEGENAPV-04725,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10090c10090
+< HIG-RunIISummer20UL16wmLHEGENAPV-04726,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10142c10142
+< HIG-RunIISummer20UL16wmLHEGENAPV-04727,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10194c10194
+< HIG-RunIISummer20UL16wmLHEGENAPV-04728,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10246c10246
+< HIG-RunIISummer20UL16wmLHEGENAPV-04729,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10298c10298
+< HIG-RunIISummer20UL16wmLHEGENAPV-04730,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10350c10350
+< HIG-RunIISummer20UL16wmLHEGENAPV-04731,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10402c10402
+< HIG-RunIISummer20UL16wmLHEGENAPV-04732,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10454c10454
+< HIG-RunIISummer20UL16wmLHEGENAPV-04733,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10506c10506
+< HIG-RunIISummer20UL16wmLHEGENAPV-04734,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10558c10558
+< HIG-RunIISummer20UL16wmLHEGENAPV-04735,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10610c10610
+< HIG-RunIISummer20UL16wmLHEGENAPV-04736,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10662c10662
+< HIG-RunIISummer20UL16wmLHEGENAPV-04737,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10714c10714
+< HIG-RunIISummer20UL16wmLHEGENAPV-04738,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2000_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10766c10766
+< HIG-RunIISummer20UL16wmLHEGENAPV-04739,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10818c10818
+< HIG-RunIISummer20UL16wmLHEGENAPV-04740,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10870c10870
+< HIG-RunIISummer20UL16wmLHEGENAPV-04741,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10922c10922
+< HIG-RunIISummer20UL16wmLHEGENAPV-04742,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+10974c10974
+< HIG-RunIISummer20UL16wmLHEGENAPV-04743,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11026c11026
+< HIG-RunIISummer20UL16wmLHEGENAPV-04744,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11078c11078
+< HIG-RunIISummer20UL16wmLHEGENAPV-04745,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11130c11130
+< HIG-RunIISummer20UL16wmLHEGENAPV-04746,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11182c11182
+< HIG-RunIISummer20UL16wmLHEGENAPV-04747,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11234c11234
+< HIG-RunIISummer20UL16wmLHEGENAPV-04748,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11286c11286
+< HIG-RunIISummer20UL16wmLHEGENAPV-04749,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2200_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11338c11338
+< HIG-RunIISummer20UL16wmLHEGENAPV-04750,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11390c11390
+< HIG-RunIISummer20UL16wmLHEGENAPV-04751,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11442c11442
+< HIG-RunIISummer20UL16wmLHEGENAPV-04752,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11494c11494
+< HIG-RunIISummer20UL16wmLHEGENAPV-04753,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11546c11546
+< HIG-RunIISummer20UL16wmLHEGENAPV-04754,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11598c11598
+< HIG-RunIISummer20UL16wmLHEGENAPV-04755,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11650c11650
+< HIG-RunIISummer20UL16wmLHEGENAPV-04756,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11702c11702
+< HIG-RunIISummer20UL16wmLHEGENAPV-04757,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11754c11754
+< HIG-RunIISummer20UL16wmLHEGENAPV-04758,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11806c11806
+< HIG-RunIISummer20UL16wmLHEGENAPV-04759,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11858c11858
+< HIG-RunIISummer20UL16wmLHEGENAPV-04760,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11910c11910
+< HIG-RunIISummer20UL16wmLHEGENAPV-04761,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2400_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+11962c11962
+< HIG-RunIISummer20UL16wmLHEGENAPV-04762,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12014c12014
+< HIG-RunIISummer20UL16wmLHEGENAPV-04763,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12066c12066
+< HIG-RunIISummer20UL16wmLHEGENAPV-04764,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12118c12118
+< HIG-RunIISummer20UL16wmLHEGENAPV-04765,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12170c12170
+< HIG-RunIISummer20UL16wmLHEGENAPV-04766,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12222c12222
+< HIG-RunIISummer20UL16wmLHEGENAPV-04767,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12274c12274
+< HIG-RunIISummer20UL16wmLHEGENAPV-04768,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12326c12326
+< HIG-RunIISummer20UL16wmLHEGENAPV-04769,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12378c12378
+< HIG-RunIISummer20UL16wmLHEGENAPV-04770,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12430c12430
+< HIG-RunIISummer20UL16wmLHEGENAPV-04771,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12482c12482
+< HIG-RunIISummer20UL16wmLHEGENAPV-04772,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12534c12534
+< HIG-RunIISummer20UL16wmLHEGENAPV-04773,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12586c12586
+< HIG-RunIISummer20UL16wmLHEGENAPV-04774,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12638c12638
+< HIG-RunIISummer20UL16wmLHEGENAPV-04775,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12690c12690
+< HIG-RunIISummer20UL16wmLHEGENAPV-04776,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12742c12742
+< HIG-RunIISummer20UL16wmLHEGENAPV-04777,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12794c12794
+< HIG-RunIISummer20UL16wmLHEGENAPV-04778,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12846c12846
+< HIG-RunIISummer20UL16wmLHEGENAPV-04779,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12898c12898
+< HIG-RunIISummer20UL16wmLHEGENAPV-04780,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+12950c12950
+< HIG-RunIISummer20UL16wmLHEGENAPV-04781,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13002c13002
+< HIG-RunIISummer20UL16wmLHEGENAPV-04782,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13054c13054
+< HIG-RunIISummer20UL16wmLHEGENAPV-04783,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13106c13106
+< HIG-RunIISummer20UL16wmLHEGENAPV-04784,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13158c13158
+< HIG-RunIISummer20UL16wmLHEGENAPV-04785,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2500_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13210c13210
+< HIG-RunIISummer20UL16wmLHEGENAPV-04786,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13262c13262
+< HIG-RunIISummer20UL16wmLHEGENAPV-04787,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13314c13314
+< HIG-RunIISummer20UL16wmLHEGENAPV-04788,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13366c13366
+< HIG-RunIISummer20UL16wmLHEGENAPV-04789,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13418c13418
+< HIG-RunIISummer20UL16wmLHEGENAPV-04790,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13470c13470
+< HIG-RunIISummer20UL16wmLHEGENAPV-04791,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13522c13522
+< HIG-RunIISummer20UL16wmLHEGENAPV-04792,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13574c13574
+< HIG-RunIISummer20UL16wmLHEGENAPV-04793,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13626c13626
+< HIG-RunIISummer20UL16wmLHEGENAPV-04794,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13678c13678
+< HIG-RunIISummer20UL16wmLHEGENAPV-04795,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13730c13730
+< HIG-RunIISummer20UL16wmLHEGENAPV-04796,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13782c13782
+< HIG-RunIISummer20UL16wmLHEGENAPV-04797,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13834c13834
+< HIG-RunIISummer20UL16wmLHEGENAPV-04798,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2600_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13886c13886
+< HIG-RunIISummer20UL16wmLHEGENAPV-04799,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13938c13938
+< HIG-RunIISummer20UL16wmLHEGENAPV-04800,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+13990c13990
+< HIG-RunIISummer20UL16wmLHEGENAPV-04801,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14042c14042
+< HIG-RunIISummer20UL16wmLHEGENAPV-04802,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14094c14094
+< HIG-RunIISummer20UL16wmLHEGENAPV-04803,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14146c14146
+< HIG-RunIISummer20UL16wmLHEGENAPV-04804,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14198c14198
+< HIG-RunIISummer20UL16wmLHEGENAPV-04805,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14250c14250
+< HIG-RunIISummer20UL16wmLHEGENAPV-04806,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14302c14302
+< HIG-RunIISummer20UL16wmLHEGENAPV-04807,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14354c14354
+< HIG-RunIISummer20UL16wmLHEGENAPV-04808,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14406c14406
+< HIG-RunIISummer20UL16wmLHEGENAPV-04809,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14458c14458
+< HIG-RunIISummer20UL16wmLHEGENAPV-04810,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14510c14510
+< HIG-RunIISummer20UL16wmLHEGENAPV-04811,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14562c14562
+< HIG-RunIISummer20UL16wmLHEGENAPV-04812,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14614c14614
+< HIG-RunIISummer20UL16wmLHEGENAPV-04813,NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-2800_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14666c14666
+< HIG-RunIISummer20UL16wmLHEGENAPV-04814,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-60_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14718c14718
+< HIG-RunIISummer20UL16wmLHEGENAPV-04815,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-70_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14770c14770
+< HIG-RunIISummer20UL16wmLHEGENAPV-04816,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-80_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14822c14822
+< HIG-RunIISummer20UL16wmLHEGENAPV-04817,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-90_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14874c14874
+< HIG-RunIISummer20UL16wmLHEGENAPV-04818,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14926c14926
+< HIG-RunIISummer20UL16wmLHEGENAPV-04819,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-125_TuneCP5_13TeV-madgraph-pythia8,216000,"
+14978c14978
+< HIG-RunIISummer20UL16wmLHEGENAPV-04820,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-150_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15030c15030
+< HIG-RunIISummer20UL16wmLHEGENAPV-04821,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-250_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15082c15082
+< HIG-RunIISummer20UL16wmLHEGENAPV-04822,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15134c15134
+< HIG-RunIISummer20UL16wmLHEGENAPV-04823,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15186c15186
+< HIG-RunIISummer20UL16wmLHEGENAPV-04824,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15238c15238
+< HIG-RunIISummer20UL16wmLHEGENAPV-04825,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15290c15290
+< HIG-RunIISummer20UL16wmLHEGENAPV-04826,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15342c15342
+< HIG-RunIISummer20UL16wmLHEGENAPV-04827,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15394c15394
+< HIG-RunIISummer20UL16wmLHEGENAPV-04828,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15446c15446
+< HIG-RunIISummer20UL16wmLHEGENAPV-04829,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15498c15498
+< HIG-RunIISummer20UL16wmLHEGENAPV-04830,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15550c15550
+< HIG-RunIISummer20UL16wmLHEGENAPV-04831,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15602c15602
+< HIG-RunIISummer20UL16wmLHEGENAPV-04832,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15654c15654
+< HIG-RunIISummer20UL16wmLHEGENAPV-04833,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15706c15706
+< HIG-RunIISummer20UL16wmLHEGENAPV-04834,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15758c15758
+< HIG-RunIISummer20UL16wmLHEGENAPV-04835,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15810c15810
+< HIG-RunIISummer20UL16wmLHEGENAPV-04836,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15862c15862
+< HIG-RunIISummer20UL16wmLHEGENAPV-04837,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15914c15914
+< HIG-RunIISummer20UL16wmLHEGENAPV-04838,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+15966c15966
+< HIG-RunIISummer20UL16wmLHEGENAPV-04839,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16018c16018
+< HIG-RunIISummer20UL16wmLHEGENAPV-04840,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16070c16070
+< HIG-RunIISummer20UL16wmLHEGENAPV-04841,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3000_MY-2800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16122c16122
+< HIG-RunIISummer20UL16wmLHEGENAPV-04842,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16174c16174
+< HIG-RunIISummer20UL16wmLHEGENAPV-04843,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16226c16226
+< HIG-RunIISummer20UL16wmLHEGENAPV-04844,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16278c16278
+< HIG-RunIISummer20UL16wmLHEGENAPV-04845,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16330c16330
+< HIG-RunIISummer20UL16wmLHEGENAPV-04846,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16382c16382
+< HIG-RunIISummer20UL16wmLHEGENAPV-04847,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16434c16434
+< HIG-RunIISummer20UL16wmLHEGENAPV-04848,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16486c16486
+< HIG-RunIISummer20UL16wmLHEGENAPV-04849,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16538c16538
+< HIG-RunIISummer20UL16wmLHEGENAPV-04850,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16590c16590
+< HIG-RunIISummer20UL16wmLHEGENAPV-04851,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16642c16642
+< HIG-RunIISummer20UL16wmLHEGENAPV-04852,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16694c16694
+< HIG-RunIISummer20UL16wmLHEGENAPV-04853,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16746c16746
+< HIG-RunIISummer20UL16wmLHEGENAPV-04854,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16798c16798
+< HIG-RunIISummer20UL16wmLHEGENAPV-04855,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16850c16850
+< HIG-RunIISummer20UL16wmLHEGENAPV-04856,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16902c16902
+< HIG-RunIISummer20UL16wmLHEGENAPV-04857,NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-3500_MY-2800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+16954c16954
+< HIG-RunIISummer20UL16wmLHEGENAPV-04858,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-700_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17006c17006
+< HIG-RunIISummer20UL16wmLHEGENAPV-04859,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17058c17058
+< HIG-RunIISummer20UL16wmLHEGENAPV-04860,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-900_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17110c17110
+< HIG-RunIISummer20UL16wmLHEGENAPV-04861,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17162c17162
+< HIG-RunIISummer20UL16wmLHEGENAPV-04862,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1100_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17214c17214
+< HIG-RunIISummer20UL16wmLHEGENAPV-04863,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17266c17266
+< HIG-RunIISummer20UL16wmLHEGENAPV-04864,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1300_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17318c17318
+< HIG-RunIISummer20UL16wmLHEGENAPV-04865,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17370c17370
+< HIG-RunIISummer20UL16wmLHEGENAPV-04866,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17422c17422
+< HIG-RunIISummer20UL16wmLHEGENAPV-04867,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-1800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17474c17474
+< HIG-RunIISummer20UL16wmLHEGENAPV-04868,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2000_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17526c17526
+< HIG-RunIISummer20UL16wmLHEGENAPV-04869,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2200_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17578c17578
+< HIG-RunIISummer20UL16wmLHEGENAPV-04870,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2400_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17630c17630
+< HIG-RunIISummer20UL16wmLHEGENAPV-04871,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2500_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17682c17682
+< HIG-RunIISummer20UL16wmLHEGENAPV-04872,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2600_TuneCP5_13TeV-madgraph-pythia8,216000,"
+17734c17734
+< HIG-RunIISummer20UL16wmLHEGENAPV-04873,NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2800_TuneCP5_13TeV-madgraph-pythia8,216000,"
+---
+> NMSSM_XToYHTo2B2W_leptonicDecay_MX-4000_MY-2800_TuneCP5_13TeV-madgraph-pythia8,216000,"

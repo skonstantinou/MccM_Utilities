@@ -1,0 +1,1769 @@
+Dataset name,Events,fragment,notes,Generator,mcdbid,time,size
+GluGluToRadionToHHTo2B2ZTo4L_M-250_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M250/v1/Radion_hh_narrow_M250_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-250 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-260_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M260/v1/Radion_hh_narrow_M260_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-260 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-270_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M270/v1/Radion_hh_narrow_M270_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-270 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-280_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M280/v1/Radion_hh_narrow_M280_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-280 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-300_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M300/v1/Radion_hh_narrow_M300_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-300 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-320_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M320/v1/Radion_hh_narrow_M320_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-320 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-350_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M350/v1/Radion_hh_narrow_M350_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-350 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-400_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M400/v1/Radion_hh_narrow_M400_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-400 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-450_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M450/v1/Radion_hh_narrow_M450_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-450 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-500_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M500/v1/Radion_hh_narrow_M500_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-500 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-550_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M550/v1/Radion_hh_narrow_M550_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-550 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-600_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M600/v1/Radion_hh_narrow_M600_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-600 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-650_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M650/v1/Radion_hh_narrow_M650_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-650 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-700_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M700/v1/Radion_hh_narrow_M700_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-700 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-750_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M750/v1/Radion_hh_narrow_M750_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-750 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-800_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M800/v1/Radion_hh_narrow_M800_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-800 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-850_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M850/v1/Radion_hh_narrow_M850_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-850 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-900_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M900/v1/Radion_hh_narrow_M900_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-900 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1000_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1000/v1/Radion_hh_narrow_M1000_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1000 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1100_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1100/v1/Radion_hh_narrow_M1100_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1100 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1200_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1200/v1/Radion_hh_narrow_M1200_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1200 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1300_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1300/v1/Radion_hh_narrow_M1300_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1300 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1400_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1400/v1/Radion_hh_narrow_M1400_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1400 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1500_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1500/v1/Radion_hh_narrow_M1500_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1500 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1600_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1600/v1/Radion_hh_narrow_M1600_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1600 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1700_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1700/v1/Radion_hh_narrow_M1700_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1700 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1800_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1800/v1/Radion_hh_narrow_M1800_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1800 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-1900_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M1900/v1/Radion_hh_narrow_M1900_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-1900 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-2000_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M2000/v1/Radion_hh_narrow_M2000_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-2000 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-2200_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M2200/v1/Radion_hh_narrow_M2200_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-2200 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-2400_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M2400/v1/Radion_hh_narrow_M2400_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-2400 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-2600_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M2600/v1/Radion_hh_narrow_M2600_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-2600 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-2800_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M2800/v1/Radion_hh_narrow_M2800_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-2800 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
+GluGluToRadionToHHTo2B2ZTo4L_M-3000_TuneCP5_PSWeights_narrow_13TeV-madgraph-pythia8,184000,"
+import FWCore.ParameterSet.Config as cms
+externalLHEProducer = cms.EDProducer(""ExternalLHEProducer"",
+    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/UL/13TeV/madgraph/V5_2.6.5/GF_Spin_0/Radion_hh_narrow_M3000/v1/Radion_hh_narrow_M3000_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    nEvents = cms.untracked.uint32(5000),
+    numberOfParameters = cms.uint32(1),
+    outputFile = cms.string('cmsgrid_final.lhe'),
+    scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
+    generateConcurrently = cms.untracked.bool(True)
+)
+
+
+from Configuration.Generator.Pythia8CommonSettings_cfi import *
+from Configuration.Generator.MCTunes2017.PythiaCP5Settings_cfi import *
+from Configuration.Generator.PSweightsPythia.PythiaPSweightsSettings_cfi import *
+
+generator = cms.EDFilter(""Pythia8ConcurrentHadronizerFilter"",
+                         maxEventsToPrint = cms.untracked.int32(1),
+                         pythiaPylistVerbosity = cms.untracked.int32(1),
+                         filterEfficiency = cms.untracked.double(1.0),
+                         pythiaHepMCVerbosity = cms.untracked.bool(False),
+                         comEnergy = cms.double(13000.),
+                         PythiaParameters = cms.PSet(
+                             pythia8CommonSettingsBlock,
+                             pythia8CP5SettingsBlock,
+                             pythia8PSweightsSettingsBlock,
+                             processParameters = cms.vstring(
+                                 '23:mMin = 0.05',
+                                 '23:onMode = off',
+                                 '23:onIfAny = 11 13 15', # only leptonic Z decays
+                                 '25:m0 = 125.0',
+                                 '25:onMode = off',
+                                 '25:onIfMatch = 5 -5',
+                                 '25:onIfMatch = 23 23',
+                                 'ResonanceDecayFilter:filter = on',
+                                 'ResonanceDecayFilter:exclusive = on', #off: require at least the specified number of daughters, on: require exactly the specified number of daughters
+                                 'ResonanceDecayFilter:eMuAsEquivalent = off', #on: treat electrons and muons as equivalent
+                                 'ResonanceDecayFilter:eMuTauAsEquivalent = on', #on: treat electrons, muons , and taus as equivalent
+                                 'ResonanceDecayFilter:allNuAsEquivalent = off', #on: treat all three neutrino flavours as equivalent
+                                 'ResonanceDecayFilter:mothers = 25,23', #list of mothers not specified -> count all particles in hard process+resonance decays (better to avoid specifying mothers when including leptons from the lhe in counting, since intermediate resonances are not gauranteed to appear in general
+                                 'ResonanceDecayFilter:daughters = 5,5,11,11,11,11',
+                             ),
+                             parameterSets = cms.vstring('pythia8CommonSettings',
+                                                         'pythia8CP5Settings',
+                                                         'pythia8PSweightsSettings',
+                                                         'processParameters'
+                                                     )
+                         )
+                     )
+
+ProductionFilterSequence = cms.Sequence(generator)
+",GluGluToRadionToHHTo2B2ZTo4L M-3000 TuneCP5 PSWeights narrow 13TeV-madgraph-pythia8,Madgraph_2.6.5  Pythia8,0,1.8,122
